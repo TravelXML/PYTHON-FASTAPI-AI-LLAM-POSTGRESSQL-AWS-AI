@@ -1,0 +1,2 @@
+# PYTHON-FASTAPI-AI-LLAM-POSTGRESSQL-AWS-AI
+Intelligent Book Management System with PYTHON, FASTAPI, AI, LLAMA, AWS
