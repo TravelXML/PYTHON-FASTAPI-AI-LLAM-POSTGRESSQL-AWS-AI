@@ -1,7 +1,4 @@
 # PYTHON-FASTAPI-AI-LLAM-POSTGRESSQL-AWS-AI
-Here's an engaging, SEO-friendly README tailored for your GitHub project:
-
----
 
 # 📚 Intelligent Book Management System with AI-Powered Summaries & Recommendations 🚀
 
