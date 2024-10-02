@@ -45,9 +45,11 @@ Everything is exposed via a RESTful API, making it easy to integrate with other 
 
 ### Book Endpoints:
 - **POST** `/books`: Add a new book.
+  ![image](https://github.com/user-attachments/assets/29445278-c806-441b-b58e-5fc8ac456a2a)
+
 - **GET** `/books`: Retrieve all books.
 - **GET** `/books/{id}`: Retrieve a specific book.
-- **PUT** `/books/{id}`: Update a book's information.
+- **PUT** `/books/{id}`: Update a book's information.\
 - **DELETE** `/books/{id}`: Delete a book.
 - **GET** `/recommendations`: Get book recommendations based on preferences.
 
