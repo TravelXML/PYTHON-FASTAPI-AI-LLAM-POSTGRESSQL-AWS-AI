@@ -48,10 +48,26 @@ Everything is exposed via a RESTful API, making it easy to integrate with other 
   ![image](https://github.com/user-attachments/assets/29445278-c806-441b-b58e-5fc8ac456a2a)
 
 - **GET** `/books`: Retrieve all books.
+  ![image](https://github.com/user-attachments/assets/beb24d9a-fa1e-4cf4-a6e0-80cdba07a1b5)
+
 - **GET** `/books/{id}`: Retrieve a specific book.
-- **PUT** `/books/{id}`: Update a book's information.\
+  ![image](https://github.com/user-attachments/assets/913a67c2-b20d-432d-af96-e6079a6bde0b)
+
+- **PUT** `/books/{id}`: Update a book's information.
+  ![image](https://github.com/user-attachments/assets/2d523a0b-2541-4c1f-9c29-f3a7cb0a2515)
+
 - **DELETE** `/books/{id}`: Delete a book.
+  ![image](https://github.com/user-attachments/assets/f3cf1b80-3cbb-44fe-a4b7-c0e7e4bfbab2)
+
+- **POST** `/books/{id}/reviews`: Add Review.
+  ![image](https://github.com/user-attachments/assets/9b5bfc30-241e-47cc-883a-7a7aa686d6c9)
+
+- **POST** `/generate-summary/`: Generate Summary
+  ![image](https://github.com/user-attachments/assets/480db59e-09ec-4dc4-8453-786ec83d40ac)
+
 - **GET** `/recommendations`: Get book recommendations based on preferences.
+  ![image](https://github.com/user-attachments/assets/cffcb373-68af-4655-9350-ab2994e27dbb)
+
 
 ### Example Code Snippet:
 
