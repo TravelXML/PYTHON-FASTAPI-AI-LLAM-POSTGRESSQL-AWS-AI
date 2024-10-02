@@ -101,16 +101,16 @@ Everything is exposed via a RESTful API, making it easy to integrate with other 
 
 - **POST** `/books/{id}/reviews`: Add Review.
   ![image](https://github.com/user-attachments/assets/9b5bfc30-241e-47cc-883a-7a7aa686d6c9)
-  
-      ```bash
-           curl --location 'http://localhost:8000/books/2/reviews' \
-         --header 'Content-Type: application/json' \
-         --data '{
-             "user_id": 123,
-             "review_text": "An incredible book with deep insights into politics and humanity.",
-             "rating": 5
-         }'
-      ```
+     
+         ```bash
+              curl --location 'http://localhost:8000/books/2/reviews' \
+            --header 'Content-Type: application/json' \
+            --data '{
+                "user_id": 123,
+                "review_text": "An incredible book with deep insights into politics and humanity.",
+                "rating": 5
+            }'
+         ```
 
 -  **POST** `/generate-summary/`: Generate Summary
   ![image](https://github.com/user-attachments/assets/480db59e-09ec-4dc4-8453-786ec83d40ac)
