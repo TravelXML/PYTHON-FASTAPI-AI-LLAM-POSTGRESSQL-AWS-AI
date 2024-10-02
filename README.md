@@ -73,15 +73,15 @@ Everything is exposed via a RESTful API, making it easy to integrate with other 
   ![image](https://github.com/user-attachments/assets/2d523a0b-2541-4c1f-9c29-f3a7cb0a2515)
   
   ```bash
-  curl --location --request PUT 'http://localhost:8000/books/2' \
---header 'Content-Type: application/json' \
---data '{
-    "title": "The Catcher in the Rye",
-    "author": "J.D. Salinger",
-    "genre": "Fiction",
-    "year_published": 1951,
-    "summary": "The novel details two days in the life of 16-year-old Holden Caulfield after he has been expelled from prep school."
-}'
+        curl --location --request PUT 'http://localhost:8000/books/2' \
+      --header 'Content-Type: application/json' \
+      --data '{
+          "title": "The Catcher in the Rye",
+          "author": "J.D. Salinger",
+          "genre": "Fiction",
+          "year_published": 1951,
+          "summary": "The novel details two days in the life of 16-year-old Holden Caulfield after he has been expelled from prep school."
+      }'
 ```
 
 - **DELETE** `/books/{id}`: Delete a book.
