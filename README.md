@@ -88,46 +88,46 @@ Everything is exposed via a RESTful API, making it easy to integrate with other 
   ![image](https://github.com/user-attachments/assets/f3cf1b80-3cbb-44fe-a4b7-c0e7e4bfbab2)
 
 ```bash
-curl --location --request PUT 'http://localhost:8000/books/2' \
---header 'Content-Type: application/json' \
---data '{
-    "title": "The Catcher in the Rye",
-    "author": "J.D. Salinger",
-    "genre": "Fiction",
-    "year_published": 1951,
-    "summary": "The novel details two days in the life of 16-year-old Holden Caulfield after he has been expelled from prep school."
-}'
+      curl --location --request PUT 'http://localhost:8000/books/2' \
+      --header 'Content-Type: application/json' \
+      --data '{
+          "title": "The Catcher in the Rye",
+          "author": "J.D. Salinger",
+          "genre": "Fiction",
+          "year_published": 1951,
+          "summary": "The novel details two days in the life of 16-year-old Holden Caulfield after he has been expelled from prep school."
+      }'
 ```
 
 - **POST** `/books/{id}/reviews`: Add Review.
   ![image](https://github.com/user-attachments/assets/9b5bfc30-241e-47cc-883a-7a7aa686d6c9)
   
   ```bash
-  curl --location 'http://localhost:8000/books/2/reviews' \
---header 'Content-Type: application/json' \
---data '{
-    "user_id": 123,
-    "review_text": "An incredible book with deep insights into politics and humanity.",
-    "rating": 5
-}'
+        curl --location 'http://localhost:8000/books/2/reviews' \
+      --header 'Content-Type: application/json' \
+      --data '{
+          "user_id": 123,
+          "review_text": "An incredible book with deep insights into politics and humanity.",
+          "rating": 5
+      }'
 ```
 
 - **POST** `/generate-summary/`: Generate Summary
   ![image](https://github.com/user-attachments/assets/480db59e-09ec-4dc4-8453-786ec83d40ac)
 
 ```bash
-curl --location 'http://localhost:9000/generate-summary/' \
---header 'Content-Type: application/json' \
---data '{
-    "content": "This book is a gripping tale of adventure and self-discovery."
-}'
+      curl --location 'http://localhost:9000/generate-summary/' \
+      --header 'Content-Type: application/json' \
+      --data '{
+          "content": "This book is a gripping tale of adventure and self-discovery."
+      }'
 ```
 
 - **GET** `/recommendations`: Get book recommendations based on preferences.
   ![image](https://github.com/user-attachments/assets/cffcb373-68af-4655-9350-ab2994e27dbb)
   
   ```bash
-  curl --location 'http://localhost:8000/recommendations/?book_title=Dune'
+     curl --location 'http://localhost:8000/recommendations/?book_title=Dune'
   ```
 
 
