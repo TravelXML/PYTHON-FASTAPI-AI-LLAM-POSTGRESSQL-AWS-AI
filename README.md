@@ -57,6 +57,9 @@ Everything is exposed via a RESTful API, making it easy to integrate with other 
 
 - **GET** `/books`: Retrieve all books.
   ![image](https://github.com/user-attachments/assets/beb24d9a-fa1e-4cf4-a6e0-80cdba07a1b5)
+  ```bash
+  curl --location 'http://localhost:8000/books/'
+  ```
 
 - **GET** `/books/{id}`: Retrieve a specific book.
   ![image](https://github.com/user-attachments/assets/913a67c2-b20d-432d-af96-e6079a6bde0b)
