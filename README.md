@@ -47,6 +47,12 @@ Everything is exposed via a RESTful API, making it easy to integrate with other 
 - **POST** `/books`: Add a new book.
   ![image](https://github.com/user-attachments/assets/29445278-c806-441b-b58e-5fc8ac456a2a)
 
+  curl --location 'http://localhost:8000/books/' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJKS1RFU1QiLCJpYXQiOjE3Mjc4NDYwMjEsIm5iZiI6MTcyNzg0NjAyMSwianRpIjoiZTM3ZGI1MTYtY2YyMS00ZWQyLTk0NzMtYmUyZmE4ODZkZDUwIiwiZXhwIjoxNzI3ODQ2OTIxLCJ0eXBlIjoiYWNjZXNzIiwiZnJlc2giOmZhbHNlfQ.-AH9mlxlsaTY9TYiI7L8JtNIMExdxCY4K4jlXYerWs0' \
+--data '{"title": "Book Title", "author": "Author Name", "genre": "Fiction", "year_published": 2023, "summary": "Sample summary."}'
+  
+
 - **GET** `/books`: Retrieve all books.
   ![image](https://github.com/user-attachments/assets/beb24d9a-fa1e-4cf4-a6e0-80cdba07a1b5)
 
