@@ -85,6 +85,3 @@ This snippet showcases how the app uses **FastAPI** and asynchronous programming
 
 We welcome contributions! Please open an issue or submit a pull request for any improvements or new features. Be sure to follow the coding standards and add relevant tests.
 
----
-
-With this README, your repository will be SEO-optimized, accessible, and attractive to contributors and users!
