@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  postgres_db:
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: book_management_db
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+
+  fastapi:
+    build:
+      context: .
+    environment:
+      DATABASE_URL: "postgresql+asyncpg://postgres:mypassword@postgres_db:5432/mydatabase"
+    depends_on:
+      - postgres_db
+      - llama3-service
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+
+  llama3-service:
+    build:
+      context: ./llama3_service
+    ports:
+      - "9000:9000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

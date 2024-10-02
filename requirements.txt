@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+asyncpg
+sqlalchemy[asyncio]
+httpx
+fastapi_jwt_auth==0.5.0  # Ensure a specific compatible version
+aioredis
+fastapi-limiter
+fastapi-cache
+pydantic==1.10.7  # Pinning Pydantic to a v1.x release
+pandas
+scikit-learn
+passlib[bcrypt]  # For password hashing and secure storage
+pytest
