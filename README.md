@@ -65,5 +65,5 @@ Run unit tests for API endpoints:
 bash
 Copy code
 pytest tests/
-🤝 Contribution Guidelines
+# 🤝 Contribution Guidelines
 We welcome contributions! Please open an issue or submit a pull request for any improvements or new features. Be sure to follow the coding standards and add relevant tests.
