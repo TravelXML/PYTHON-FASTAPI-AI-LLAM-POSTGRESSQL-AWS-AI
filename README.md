@@ -160,5 +160,5 @@ This snippet showcases how the app uses **FastAPI** and asynchronous programming
 
 ## 🤝 Contribution Guidelines
 
-We welcome contributions! Please open an issue or submit a pull request for any improvements or new features. Be sure to follow the coding standards and add relevant tests.
+Welcome for contributions! Please open an issue or submit a pull request for any improvements or new features. Be sure to follow the coding standards and add relevant tests.
 
